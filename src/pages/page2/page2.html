@@ -1,0 +1,44 @@
+<!--
+  Generated template for the Page2Page page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>Second Question</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+	
+	<ion-list>
+		<ion-list-header>
+			<h1>Which of these was included in your meal?</h1>
+		</ion-list-header>
+  		<ion-item>
+  			<ion-label>Starter</ion-label>
+  			<ion-checkbox [(ngModel)]="starter"></ion-checkbox>
+  		</ion-item>
+  		<ion-item>
+  			<ion-label>First Course</ion-label>
+  			<ion-checkbox [(ngModel)]="firstCourse"></ion-checkbox>
+  		</ion-item>
+  		<ion-item>
+  			<ion-label>Main dish</ion-label>
+  			<ion-checkbox [(ngModel)]="mainDish"></ion-checkbox>
+  		</ion-item>
+
+  		<ion-item>
+  			<ion-label>Dessert</ion-label>
+  			<ion-checkbox [(ngModel)]="dessert"></ion-checkbox>
+  		</ion-item>
+
+
+	</ion-list>
+	<button ion-button block>Next</button>
+
+</ion-content>
