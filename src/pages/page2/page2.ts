@@ -1,13 +1,7 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
-
-/**
- * Generated class for the Page2Page page.
- *
- * See https://ionicframework.com/docs/components/#navigation for more info on
- * Ionic pages and navigation.
- */
-
+import { Page3Page } from '../page3/page3';
+import { Page5Page } from '../page5/page5';
 @IonicPage()
 @Component({
   selector: 'page-page2',
@@ -16,6 +10,9 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 export class Page2Page {
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
+  }
+  pushPage(){
+  	this.navCtrl.push(Page3Page);
   }
 
   ionViewDidLoad() {

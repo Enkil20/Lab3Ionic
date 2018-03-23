@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
-
+import { Page1Page } from '../page1/page1';
 /**
  * Generated class for the Page5Page page.
  *
@@ -15,7 +15,11 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 })
 export class Page5Page {
 
+
   constructor(public navCtrl: NavController, public navParams: NavParams) {
+  }
+  pushPage(){
+  	this.navCtrl.push(Page1Page);
   }
 
   ionViewDidLoad() {

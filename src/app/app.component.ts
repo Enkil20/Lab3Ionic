@@ -13,7 +13,7 @@ import { Page5Page } from '../pages/page5/page5';
   templateUrl: 'app.html'
 })
 export class MyApp {
-  rootPage:any = Page5Page;
+  rootPage:any = Page1Page;
   
 
   constructor(platform: Platform, statusBar: StatusBar, splashScreen: SplashScreen) {
