@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 import { Page2Page } from '../page2/page2';
-import { Page5Page } from '../page5/page5';
+//import { Page5Page } from '../page5/page5';
 
 
 @IonicPage()
@@ -10,9 +10,10 @@ import { Page5Page } from '../page5/page5';
   templateUrl: 'page1.html',
 })
 export class Page1Page {
-	mealValue: number = 0;
+	mealStatus: any;
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
+  	this.mealStatus = {};
   }
   pushPage(){
   	this.navCtrl.push(Page2Page);
